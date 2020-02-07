@@ -1,0 +1,4 @@
+- @posts.each do |post|
+  -# = render partial: "post",locals:{post:post}
+  -# partial:オプションではファイル名を指定している。localsは部分テンプレートないで変数を使えるようにするオプション。左が部分テンプレート内(_post)で使う変数。右が呼び出しもとの|post|
+  = render post
